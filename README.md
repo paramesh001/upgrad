@@ -1,9 +1,9 @@
-# pre-requisites
+### pre-requisites
 1. azure devops account
 2. google cloud account
 3. docker hub account with public evaluationapp repository.
 
-Importing our repository into azure devops
+### Importing our repository into azure devops
 login to azure devops
 Create a new project by clicking the button in the top right corner.
 So the first thing we need to do is create a project. To do that log in to Azure DevOps and click “Create Project” in the top right corner.
