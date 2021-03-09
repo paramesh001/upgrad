@@ -52,6 +52,7 @@ Go to the evaluationapp project.
 Click on pipelines and select create a new pipeline
 Select azure repo git yaml -> evaluationapp repo -> starter pipeline.
 Delete the existing content poped up and add the following code
+```
 name : Docker-CI
 trigger:
   branches:
@@ -91,6 +92,7 @@ stages:
         command: 'Push an image'
         imageName: '$(ImageName)'
       condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'))
+ ```
 
 click on save and run.
 Now our pipeline is running and building.
