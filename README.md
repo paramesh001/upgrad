@@ -1,7 +1,7 @@
-pre-requisites
-1)azure devops account
-2)google cloud account
-3)docker hub account with public evaluationapp repository.
+# pre-requisites
+1. azure devops account
+2. google cloud account
+3. docker hub account with public evaluationapp repository.
 
 Importing our repository into azure devops
 login to azure devops
