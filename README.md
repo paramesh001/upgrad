@@ -21,11 +21,13 @@ Once your project has been created you will be taken to the project summary page
 
 Importing your GitHub repo
 Now that we have a project we can navigate to the repo’s section of our project and import our existing GitHub repo.
+
 ![image](https://user-images.githubusercontent.com/68682617/110419014-8943de00-80be-11eb-8acd-eb23b3d1299d.png)
 
 
 Initial Repo page with no files.
 On this screen we can click on the Import button about half way down the page. That will trigger a popup that asks where the source repo is located. From here you should select “git” as the source type, and paste in your clone URL from GitHub. If it’s a private GitHub repo you will need to check the authorization box ad enter your credentials.
+
  ![image](https://user-images.githubusercontent.com/68682617/110419049-93fe7300-80be-11eb-95d2-6ae97c2b98cd.png)
 
 Import Popup – Enter your source type and your clone URL
@@ -35,6 +37,7 @@ Import will complete, and it only took a minute or so.
 Creating a service connection for docker hub registry.
 Click on the project evaluationapp then click on project settings at the bottom left corner.
 Select service connections and Create a new service connection for docker registry. 
+
  ![image](https://user-images.githubusercontent.com/68682617/110419076-9cef4480-80be-11eb-886c-f1e4fd3b6844.png)
 
 
@@ -97,6 +100,7 @@ Deploying the application into google cloud
 Login into your google cloud account
 Search for kubernetes engine and select it.
 Now click on create to create a new cluster.
+
  ![image](https://user-images.githubusercontent.com/68682617/110419111-ac6e8d80-80be-11eb-8dfe-03d84b7584ef.png)
 
 
@@ -104,6 +108,7 @@ Select standard and go with the default settings and click create.
 It will take 5 – 6 minutes to create the cluster.
 Till then click cloudshell icon in the top rightside.
 Go to the cluster and click on  connect
+
  ![image](https://user-images.githubusercontent.com/68682617/110419124-b42e3200-80be-11eb-86d7-a63bef99244d.png)
 
 
