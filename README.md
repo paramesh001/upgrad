@@ -10,6 +10,7 @@ So the first thing we need to do is create a project. To do that log in to Azure
 
 Next fill in the new project card with the proper information. Make sure to click Advanced if you want to change the version control system, or the work process, for this project.
  
+![alt text]![image](https://user-images.githubusercontent.com/68682617/110418948-5d285d00-80be-11eb-8177-0177bed225c6.png)
 
 
 
