@@ -119,12 +119,13 @@ Command looks like as follows
 gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project < your project id>
 now execute the following commands in the cloud shell.
 1.	docker login -u <username> -p <password>
-2.	docker pull <username>/evaluationapp:<recent tag>
-3.	gcloud services enable containerregistry.googleapis.com --project <projectId>
-4.	docker tag <username>/evaluationapp:<recent tag> gcr.io/<ProjectId>/<username>/evaluationapp:<recent tag>
-5.	docker push gcr.io/<ProjectID>/username/evaluationapp:<tag>
+1.	docker pull <username>/evaluationapp:<recent tag>
+1.	gcloud services enable containerregistry.googleapis.com --project <projectId>
+1.	docker tag <username>/evaluationapp:<recent tag> gcr.io/<ProjectId>/<username>/evaluationapp:<recent tag>
+1.	docker push gcr.io/<ProjectID>/username/evaluationapp:<tag>
 6.	nano deployment.yaml
 paste the following content and edit accordingly.
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -143,7 +144,7 @@ spec:
       containers:
       - name: evaluationapp
         image: <username>/evaluationapp:<tag>
-
+```
 7.	ctrl+X, type y and hit enter to save changes
 8.	kubectl apply -f deployment.yaml
 9.	kubectl expose deployment evaluationapp --type=LoadBalancer --name=my-service --port=80 --target-port=5009
