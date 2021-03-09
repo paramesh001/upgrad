@@ -19,7 +19,7 @@ Next fill in the new project card with the proper information. Make sure to clic
 The New Project Card. Enter the relevant information to create a new Azure DevOps Project.
 Once your project has been created you will be taken to the project summary page. Here you can see project members, the readme, and some stats about your repos (but you don’t have one yet… so now let’s import from GitHub).
 
-Importing your GitHub repo
+### Importing your GitHub repo
 Now that we have a project we can navigate to the repo’s section of our project and import our existing GitHub repo.
 
 ![image](https://user-images.githubusercontent.com/68682617/110419014-8943de00-80be-11eb-8acd-eb23b3d1299d.png)
@@ -34,7 +34,7 @@ Import Popup – Enter your source type and your clone URL
 Click Import to start the process. 
 Import will complete, and it only took a minute or so.
 
-Creating a service connection for docker hub registry.
+### Creating a service connection for docker hub registry.
 Click on the project evaluationapp then click on project settings at the bottom left corner.
 Select service connections and Create a new service connection for docker registry. 
 
@@ -45,9 +45,9 @@ When popup comes look for docker registry and select it.
 Select the docker hub and provide credentials.
 Under service connection name give docker2 and click on verify and save.
 
-Creating and building the pipeline
+### Creating and building the pipeline
 Here we are creating pipeline for building the docker image for the application and pushing the image to the dockerhub registry.
-Steps:
+***Steps:***
 Go to the evaluationapp project.
 Click on pipelines and select create a new pipeline
 Select azure repo git yaml -> evaluationapp repo -> starter pipeline.
@@ -98,7 +98,7 @@ click on save and run.
 Now our pipeline is running and building.
 After the build our docker image will create and been pushed to docker registry under the repository name evaluation app.
 
-Deploying the application into google cloud
+### Deploying the application into google cloud
 Login into your google cloud account
 Search for kubernetes engine and select it.
 Now click on create to create a new cluster.
